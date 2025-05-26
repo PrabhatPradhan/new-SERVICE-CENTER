@@ -1,0 +1,44 @@
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 64px;
+    animation: scrollRight 40s linear infinite;
+  }
+  
+  .carousel-track img {
+    height: 40px;
+    max-width: 120px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel-track img:hover {
+    opacity: 1;
+  }
+  
+  @keyframes scrollRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
