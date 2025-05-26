@@ -36,7 +36,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-6 text-sm font-semibold text-gray-700">
+        <nav className="hidden md:flex space-x-6 text-sm font-semibold text-black">
           <Link href="/" className="hover:text-orange-600 font-bold">HOME</Link>
           <Link href="/about" className="hover:text-orange-600">ABOUT US</Link>
           <Link href="/amc" className="hover:text-orange-600">AMC</Link>
@@ -64,20 +64,34 @@ export default function Header() {
       >
         {/* Close Area Overlay */}
         <div
-          className="fixed inset-0 bg-black opacity-30 z-40"
+          className="fixed inset-0 bg-orange-600 opacity-30 z-40"
           onClick={() => setIsOpen(false)}
         ></div>
+        
 
         {/* Mobile Menu Content */}
-        <div className="relative z-50 p-4 pt-16 space-y-4 text-sm font-semibold text-gray-700">
-          <Link href="/" className="block hover:text-orange-600">HOME</Link>
-          <Link href="/about" className="block hover:text-orange-600">ABOUT US</Link>
-          <Link href="/amc" className="block hover:text-orange-600">AMC</Link>
-          <Link href="/appointment" className="block hover:text-orange-600">APPOINTMENT</Link>
-          <Link href="/gallery" className="block hover:text-orange-600">GALLERY</Link>
-          <Link href="/contact" className="block hover:text-orange-600">CONTACT US</Link>
-          <Link href="/feedback" className="block hover:text-orange-600">FEEDBACK</Link>
-          <Link href="/blog" className="block hover:text-orange-600">BLOG ARTICLES</Link>
+        <div className="relative z-50 p-4 pt-6 space-y-4 text-sm font-semibold text-black">
+        <div className="flex items-center">
+          <div className="flex flex-col items-start">
+            <h1 className="text-xl font-bold text-gradient bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
+              Authorised
+            </h1>
+            <span className="text-sm font-semibold text-black">
+              Customer Service
+            </span>
+          </div>
+          <span className="text-orange-400 text-5xl animate-spin [animation-duration:12s]">
+            ✶
+          </span>
+        </div>
+          <Link href="/" className="block hover:text-orange-600 border-b border-gray-900 pb-2">HOME</Link>
+          <Link href="/about" className="block hover:text-orange-600 border-b border-gray-900 pb-2">ABOUT US</Link>
+          <Link href="/amc" className="block hover:text-orange-600 border-b border-gray-900 pb-2">AMC</Link>
+          <Link href="/appointment" className="block hover:text-orange-600 border-b border-gray-900 pb-2">APPOINTMENT</Link>
+          <Link href="/gallery" className="block hover:text-orange-600 border-b border-gray-900 pb-2">GALLERY</Link>
+          <Link href="/contact" className="block hover:text-orange-600 border-b border-gray-900 pb-2">CONTACT US</Link>
+          <Link href="/feedback" className="block hover:text-orange-600 border-b border-gray-900 pb-2">FEEDBACK</Link>
+          <Link href="/blog" className="block hover:text-orange-600 border-b border-gray-900 pb-2">BLOG ARTICLES</Link>
 
           {/* Contact Section */}
           <div className="flex items-start space-x-2 pt-4 border-t border-gray-200 cursor-pointer hover:bg-gray-50 p-2 rounded">

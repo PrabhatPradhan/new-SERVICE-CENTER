@@ -1,7 +1,7 @@
 import { FaTruck, FaBoxOpen, FaTools } from "react-icons/fa";
 import "../../Componets/WhyWeAreBest/WhyWeAreBest.css";
 import Link from "next/link";
-import InfiniteSlider from "../../Componets/InfiniteSlider/InfiniteSlider"
+import InfiniteSlider from "../../Componets/InfiniteSlider/InfiniteSlider";
 export default function WhyWeAreBest() {
   return (
     <>
@@ -109,54 +109,67 @@ export default function WhyWeAreBest() {
       </section>
 
       {/* Section: Why We Are Best */}
-      <section className="bg-gradient-to-br mt-2 from-[#ff7e3f] to-[#ff5602] text-white px-6 py-16 md:px-20 relative overflow-hidden">
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+      <section
+        id="why-section"
+        className="bg-gradient-to-br mt-2 from-[#ff7e3f] to-[#ff5602] text-white px-6 py-16 gap-4 md:px-20 relative overflow-hidden"
+      >
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Text Content */}
           <div>
             <p className="uppercase tracking-widest text-sm font-semibold mb-2">
               ✨ Exceptional Service ✨
             </p>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-              Why We Are Best
-              <br />
-              From Others
+              Why We Are Best <br /> From Others
             </h2>
             <button className="relative overflow-hidden text-white font-bold py-3 px-6 rounded-full shadow-md group">
               <span className="absolute inset-0 bg-gradient-to-t from-orange-500 to-yellow-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></span>
-              <span className="relative z-10"><Link href='/contact'>GET A SCHEDULE</Link></span>
+              <span className="relative z-10">
+                <Link href="/contact">GET A SCHEDULE</Link>
+              </span>
             </button>
           </div>
 
           {/* Right Features */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
-            <div className="bg-white text-orange-800 p-6 rounded-xl shadow-lg   hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
-              <div className="bg-orange-100 w-12 h-12 flex items-center justify-center rounded-md mb-4">
+          {/* Right Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10 mt-10 md:mt-0">
+            <div
+              id="card"
+              className="bg-white text-orange-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 transform transition-all duration-300 ease-in-out"
+            >
+              <div className="bg-orange-100 w-14 h-14 flex items-center justify-center rounded-md mb-4">
                 <FaTruck className="text-2xl text-orange-500" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Fast Service</h3>
+              <h3 className="text-xl font-bold mb-2">Fast Service</h3>
               <p className="text-sm text-orange-700">
-                I cant thank Stada enough for saving my computer! Their team
-                worked tirelessly to recover my files and fix the software.
+                I can't thank Stada enough for saving my computer!
               </p>
             </div>
-            <div className="bg-white text-orange-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
-              <div className="bg-orange-100 w-12 h-12 flex items-center justify-center rounded-md mb-4">
+
+            <div
+              id="card"
+              className="bg-white text-orange-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 transform transition-all duration-300 ease-in-out"
+            >
+              <div className="bg-orange-100 w-14 h-14 flex items-center justify-center rounded-md mb-4">
                 <FaBoxOpen className="text-2xl text-orange-500" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Free Diagnostics</h3>
+              <h3 className="text-xl font-bold mb-2">Free Diagnostics</h3>
               <p className="text-sm text-orange-700">
-                I cant thank Stada enough for saving my computer! Their team
-                worked tirelessly to recover my files and fix the software.
+                Their team worked tirelessly to recover my files.
               </p>
             </div>
-            <div className="bg-white   text-orange-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
-              <div className="bg-orange-100 w-12 h-12 flex items-center justify-center rounded-md mb-4">
+
+            <div
+              id="card"
+              className="bg-white text-orange-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 transform transition-all duration-300 ease-in-out"
+            >
+              <div className="bg-orange-100 w-14 h-14 flex items-center justify-center rounded-md mb-4">
                 <FaTools className="text-2xl text-orange-500" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Quick Repair Process</h3>
+              <h3 className="text-xl font-bold mb-2">Quick Repair Process</h3>
               <p className="text-sm text-orange-700">
-                I cant thank Stada enough for saving my computer! Their team
-                worked tirelessly to recover my files and fix the software.
+                They fixed the software with amazing speed!
               </p>
             </div>
           </div>
@@ -167,19 +180,20 @@ export default function WhyWeAreBest() {
       </section>
 
       {/* Section: Partners */}
-      <section className="py-16 bg-white text-center">
-        <div className="mb-4 text-orange-600 font-semibold tracking-wide uppercase">
+      <section className=" pt-8 bg-white text-center">
+        <div className="pb-6 text-orange-600 font-semibold tracking-wide uppercase">
           ✦ Partners ✦
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ">
           Proudly Backed By Years of <br className="hidden md:block" />
           Trusted Service
         </h2>
 
         {/*slider */}
 
-        <InfiniteSlider />
+        
       </section>
+      <InfiniteSlider />
     </>
   );
 }

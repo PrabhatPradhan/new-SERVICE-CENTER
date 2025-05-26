@@ -19,7 +19,7 @@ export default function Page() {
         {/* Header Section */}
         <section
           style={{
-            backgroundImage: `url('https://api.mintoholidays.com/uploads/page/1742303431977.jpg')`, // Replace with actual image path or URL
+            backgroundImage: `url('https://aoneeducationpoint.com/wp-content/uploads/2022/01/contact-to-infinity-training-center-kuwait.jpg')`, // Replace with actual image path or URL
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

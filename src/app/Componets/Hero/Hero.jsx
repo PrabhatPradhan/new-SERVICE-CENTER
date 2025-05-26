@@ -2,25 +2,25 @@
 
 import { useState, useEffect } from "react";
 import {
-  FaPaintRoller,
-  FaTools,
-  FaPlug,
-  FaHammer,
-  FaWrench,
-  FaHome,
-  FaToilet,
-  FaHardHat,
+  FaSnowflake,
+  FaTachometerAlt,
+ 
+  FaTv,
+  FaFire,
+  FaWater,
+  FaSink,
+  FaWind,
 } from "react-icons/fa";
-
+import { MdMicrowave } from "react-icons/md";
 const icons = [
-  { Icon: FaPaintRoller, label: "Painting", angle: -90 },
-  { Icon: FaHome, label: "Roofing", angle: -35 },
-  { Icon: FaHardHat, label: "Drilling", angle: 5 },
-  { Icon: FaPlug, label: "Electricity", angle: 45 },
-  { Icon: FaHammer, label: "Carpentry", angle: 80 },
-  { Icon: FaToilet, label: "Plumbing", angle: 125 },
-  { Icon: FaTools, label: "Home Service", angle: 170 },
-  { Icon: FaWrench, label: "Piping", angle: 215 },
+  { Icon: FaSnowflake, label: "REFRIGERATOR", angle: -90 },
+  { Icon: FaTachometerAlt, label: "WASHING MACHINE", angle: -35 },
+  { Icon: MdMicrowave, label: "MICROWAVE OVEN", angle: 5 },
+  { Icon: FaTv, label: "TELEVISION", angle: 45 },
+  { Icon: FaFire, label: "GEYSER", angle: 80 },
+  { Icon: FaWater, label: "RO WATER", angle: 125 },
+  { Icon: FaSink, label: "KITCHEN CHIMNEY", angle: 170 },
+  { Icon: FaWind, label: "AC", angle: 215 },
 ];
 
 export default function Hero() {
@@ -42,7 +42,7 @@ export default function Hero() {
       <section className="flex items-center   justify-around flex-col pb-2 md:flex-row   gap-0 px-6 md:px-20 py-6 bg-[#f0f6fc] relative overflow-hidden">
         {/* Left Content */}
         <div className="max-w-xl z-10 px-6 md:px-0 space-y-4">
-          <p className="text-blue-600 font-semibold text-sm flex items-center gap-2">
+          <p className="text-orange-600 font-semibold text-sm flex items-center gap-2">
             <span className="text-xl">🛠️</span> 100% SATISFACTION GUARANTEE
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="relative w-[40rem] h-[550px]   items-center justify-center bg-blue-50 overflow-hidden hidden md:flex">
           {/* Dotted Circle SVG */}
           <svg
-            className="absolute"
+            className="absolute   "
             width={radius * 2 + 100}
             height={radius * 2 + 100}
             style={{
@@ -72,7 +72,7 @@ export default function Hero() {
               cx={(radius * 2 + 100) / 2}
               cy={(radius * 2 + 100) / 2}
               r={radius}
-              stroke="#3B82F6"
+              stroke="#f6863b"
               strokeWidth="1"
               strokeDasharray="4 8"
               fill="none"
@@ -115,7 +115,7 @@ export default function Hero() {
                 }}
               >
                 <div
-                  className={`w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center cursor-pointer transition text-blue-600 text-xl ${
+                  className={`w-12 h-12   text-3xl rounded-full bg-white shadow-md flex items-center justify-center cursor-pointer transition text-orange-600   ${
                     isActive ? "scale-110" : ""
                   }`}
                 >
@@ -144,7 +144,7 @@ export default function Hero() {
         <p className="uppercase text-sm tracking-widest font-bold text-black mb-2">
           Special Services
         </p>
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
           All Appliance Repair Service &<br />
           <span className="text-white">In One Platform</span>
         </h2>

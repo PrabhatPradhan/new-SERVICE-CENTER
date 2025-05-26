@@ -130,8 +130,8 @@ export default function Card() {
               <div className="relative overflow-hidden font-bold py-3 px-5 sm:px-6 rounded-full shadow-md group hover:scale-105 transition-transform duration-300 cursor-pointer text-center">
                 <span className="absolute inset-0 bg-gradient-to-t from-orange-500 to-yellow-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0 rounded-full"></span>
                 <div className="relative z-10 flex items-center justify-center gap-2 sm:gap-3 text-white">
-                  <div className="bg-white bg-opacity-20 p-2 rounded-full">
-                    <FiPhoneCall className="text-black text-base sm:text-lg" />
+                  <div className="bg-white  bg-opacity-20 p-2 rounded-full">
+                    <FiPhoneCall className="text- text-base sm:text-lg" />
                   </div>
                   <span className="text-white text-base sm:text-lg font-bold">+123 456-7898</span>
                 </div>
