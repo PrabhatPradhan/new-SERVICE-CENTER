@@ -1,10 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "@Componets/Navbar/Navbar";
-import StatsOfNumbers from "../../Components/StatsOfNumbers/StatsOfNumbers";
-import Footer from "@Componets/Footer/Footer";
-
+ 
 // Move this array above the component
 const images = [
   "https://5.imimg.com/data5/SELLER/Default/2021/1/XK/LR/PI/120736883/elisa-automatic-kitchen-chimney.jpg",
@@ -31,7 +28,7 @@ export default function Page() {
 
   return (
     <>
-      <Navbar />
+      
       <br />
       <br />
 
@@ -207,8 +204,7 @@ export default function Page() {
         </div>
       </div>
 
-      <StatsOfNumbers />
-      <Footer />
+      
     </>
   );
 }
