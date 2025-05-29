@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../../Components/Navbar/Navbar";
+import Navbar from "../../Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Components/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Components/Footer/Footer";
 
