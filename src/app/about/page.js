@@ -73,7 +73,7 @@ export default function Page() {
                 {/* Stat 2 */}
                 <div className="flex items-center gap-3 transition-transform duration-300 hover:scale-105">
                   <img
-                    src="https://c8.alamy.com/comp/2R1ND7R/experience-icon-monochrome-simple-sign-from-critical-thinking-collection-experience-icon-for-logo-templates-web-design-and-infographics-2R1ND7R.jpg"
+                    src="https://cdn-icons-png.flaticon.com/512/9727/9727444.png"
                     alt="Experience Icon"
                     className="w-10 h-10 transition-transform duration-300 hover:rotate-6"
                   />
@@ -205,7 +205,7 @@ export default function Page() {
             {/* Main Content */}
             <div className="grid lg:grid-cols-2  gap-8  w-full">
               {/* Left side Steps */}
-              <div className="space-y-10 mt-9   px-4 sm:px-6 lg:px-24">
+              <div id="cards-3-steps" className="space-y-10 mt-9 ml-16   px-4 sm:px-6 lg:px-24">
                 {/* Step 1 */}
                 <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                   <div className="border p-4 shadow-sm flex-1 max-w-80 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
@@ -267,7 +267,7 @@ export default function Page() {
           </div>
         </section>
         <StatsOfNumbers />
-        <section className="py-6 bg-white text-center">
+        <section className="py-6 mt-8 bg-white text-center">
           <div className="mb-4 text-orange-600 font-semibold tracking-wide uppercase">
             ✦ Partners ✦
           </div>

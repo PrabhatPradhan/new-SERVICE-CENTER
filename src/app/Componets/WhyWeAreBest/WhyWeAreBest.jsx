@@ -2,9 +2,60 @@ import { FaTruck, FaBoxOpen, FaTools } from "react-icons/fa";
 import "../../Componets/WhyWeAreBest/WhyWeAreBest.css";
 import Link from "next/link";
 import InfiniteSlider from "../../Componets/InfiniteSlider/InfiniteSlider";
+import { FiPhoneCall } from "react-icons/fi";
 export default function WhyWeAreBest() {
   return (
     <>
+      <div className="  flex items-center justify-center px-4 mt-0 md:mt-4">
+        <div className="bg-[#0e0034] rounded-2xl px-6 sm:px-8 py-10 sm:py-12 w-full max-w-6xl text-center text-white relative overflow-hidden shadow-lg">
+          {/* Background effects */}
+          <div className="absolute inset-0 pointer-events-none select-none">
+            <div className="absolute left-6 top-1/3 w-32 h-32 sm:w-40 sm:h-40 bg-gradient-radial from-purple-400/40 to-transparent rounded-full blur-2xl"></div>
+            <div className="absolute right-6 top-10 w-20 h-20 sm:w-24 sm:h-24 bg-gradient-radial from-yellow-300/30 to-transparent rounded-full blur-2xl"></div>
+            <div className="absolute left-6 bottom-6 text-purple-200 text-5xl sm:text-6xl animate-spin [animation-duration:12s]">
+              ✦
+            </div>
+            <div className="absolute right-6 top-6 text-yellow-300 text-4xl sm:text-5xl animate-spin [animation-duration:12s]">
+              ✶
+            </div>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-8 sm:mb-10">
+            We Repair, You Relax. Click Below <br className="hidden sm:block" />
+            and Let’s Fix Your Devices!
+          </h2>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+            {/* Call Button */}
+            <a href="tel:+1234567898" className="block w-full md:w-auto">
+              <div className="relative overflow-hidden font-bold py-3 px-5 sm:px-6 rounded-full shadow-md group hover:scale-105 transition-transform duration-300 cursor-pointer text-center">
+                <span className="absolute inset-0 bg-gradient-to-t from-orange-500 to-yellow-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0 rounded-full"></span>
+                <div className="relative z-10 flex items-center justify-center gap-2 sm:gap-3 text-white">
+                  <div className="bg-white bg-opacity-20 p-2 rounded-full">
+                    <FiPhoneCall className="text-base sm:text-lg" />
+                  </div>
+                  <span className="text-white text-base sm:text-lg font-bold">
+                    +123 456-7898
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <span className="text-white/70 font-semibold hidden md:block">
+              OR
+            </span>
+
+            {/* Schedule Button */}
+            <Link href="/contact" className="w-full md:w-auto">
+              <div className="relative overflow-hidden text-white font-bold py-3 px-5 sm:px-6 rounded-full shadow-md group hover:scale-105 transition-transform duration-300 text-center">
+                <span className="absolute inset-0 bg-gradient-to-t from-orange-500 to-yellow-400 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0 rounded-full"></span>
+                <span className="relative z-10 block">GET A SCHEDULE</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Section: Why Choose Us */}
       <section className="py-20 bg-white mt-12">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -190,8 +241,6 @@ export default function WhyWeAreBest() {
         </h2>
 
         {/*slider */}
-
-        
       </section>
       <InfiniteSlider />
     </>

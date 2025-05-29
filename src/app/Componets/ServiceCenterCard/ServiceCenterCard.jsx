@@ -54,7 +54,7 @@ export default function ServiceCenterCard() {
           </button>
 
           {/* Title */}
-          <h2 className="text-center text-2xl font-bold mb-4">
+          <h2 className="text-center text-white text-2xl font-bold mb-4">
             SERVICE CENTER
           </h2>
 
@@ -106,7 +106,7 @@ export default function ServiceCenterCard() {
             </button>
           </form>
 
-          <p className="text-center mt-4 font-bold">Call Now : 18001201514</p>
+          <p className="text-center text-white mt-4 font-bold">Call Now : 18001201514</p>
         </div>
       </div>
 

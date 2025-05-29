@@ -42,18 +42,21 @@ export default function EnquiryForm() {
       {/* Enquiry Button */}
       <button
         onClick={() => setShow(true)}
-        className="fixed top-1/2 left-[1rem] transform -translate-y-1/2 rotate-[-90deg] origin-left bg-orange-500 text-white font-semibold py-2 px-4 rounded-tr-lg rounded-br-lg shadow-lg z-50"
+        className="hidden md:block fixed top-1/2 left-[1rem] transform -translate-y-1/2 rotate-[-90deg] origin-left bg-orange-500 text-white font-semibold py-2 px-4 rounded-tr-lg rounded-br-lg shadow-lg z-50"
       >
         Enquiry Form
       </button>
 
       {/* Popup Modal */}
       {show && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center  ">
+        <div className="fixed inset-0   z-40 flex items-center justify-center">
           <div
-            className={`relative rounded-xl shadow-2xl w-full  max-w-6xl max-h-[90vh] mx-4 md:mx-10 p-6 md:p-10 grid md:grid-cols-2 overflow-y-auto
-              transform transition-all duration-500 ease-out
-              ${animate ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}
+            className={`relative rounded-xl w-[54rem] max-w-6xl max-h-[90vh] mx-4 md:mx-10 p-6 md:p-10 grid md:grid-cols-2   transform transition-all duration-500 ease-out ${
+              animate
+                ? "translate-y-0 opacity-100"
+                : "translate-y-full opacity-0"
+            }
+            "}
             `}
           >
             {/* Close Button */}
@@ -103,12 +106,13 @@ export default function EnquiryForm() {
               ></textarea>
               <button
                 type="submit"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded w-full"
+                className="bg-orange-800 hover:bg-orange-600 text-white px-6 py-2 rounded w-full"
               >
                 Submit Enquiry
               </button>
               <p className="flex items-center text-white font-medium mt-2">
-                <FaWhatsapp className="mr-2 text-green-400" /> Get itinerary on Whatsapp
+                <FaWhatsapp className="mr-2 text-green-400" /> Get itinerary on
+                Whatsapp
               </p>
             </form>
 
@@ -116,7 +120,7 @@ export default function EnquiryForm() {
             <div className="space-y-6 bg-orange-100">
               <div className="overflow-hidden">
                 <img
-                  src="https://api.mintoholidays.com/uploads/Banner/1742209575571.png"
+                  src="https://files.yappe.in/place/full/authorised-samsung-service-center-sai-telecom-2791212.webp"
                   alt="Char Dham Yatra"
                   className="rounded-xl p-2"
                 />
@@ -142,7 +146,10 @@ export default function EnquiryForm() {
 
               <div className="pt-4 text-sm pl-4">
                 <p className="font-bold text-orange-500">
-                  Excellent! <span className="inline-block text-orange-600">⬤ ⬤ ⬤ ⬤ ◯</span>{" "}
+                  Excellent!{" "}
+                  <span className="inline-block text-orange-600">
+                    ⬤ ⬤ ⬤ ⬤ ◯
+                  </span>{" "}
                   4.5 Rating Out of 5.0
                 </p>
                 <p>Based on 526 reviews</p>
@@ -166,7 +173,7 @@ export default function EnquiryForm() {
       {/* Submission Popup */}
       {submitted && (
         <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-4 py-2 rounded shadow-lg z-50">
-!          Enquiry submitted successfully
+          ! Enquiry submitted successfully
         </div>
       )}
     </>
