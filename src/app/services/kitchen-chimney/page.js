@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "@Components/Navbar/Navbar";
+import Navbar from "@Componets/Navbar/Navbar";
 import StatsOfNumbers from "../../Components/StatsOfNumbers/StatsOfNumbers";
-import Footer from "@Components/Footer/Footer";
+import Footer from "@Componets/Footer/Footer";
 
 // Move this array above the component
 const images = [
