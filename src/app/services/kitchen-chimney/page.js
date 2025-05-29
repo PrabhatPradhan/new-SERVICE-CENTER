@@ -1,11 +1,17 @@
 "use client";
+
 import React, { useState } from "react";
-import Navbar from "../../Componets/Navbar/Navbar";
-import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
-import Footer from "../../Componets/Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar";
+import StatsOfNumbers from "../../Components/StatsOfNumbers/StatsOfNumbers";
+import Footer from "../../Components/Footer/Footer";
+
+// Move this array above the component
+const images = [
+  "https://5.imimg.com/data5/SELLER/Default/2021/1/XK/LR/PI/120736883/elisa-automatic-kitchen-chimney.jpg",
+];
 
 export default function Page() {
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+  const [selectedImage] = useState(null);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleOpenBooking = () => setIsBookingOpen(true);
@@ -21,7 +27,7 @@ export default function Page() {
     "acer",
   ];
 
-  const phoneNumber = "+919999999999"; // Replace this with your real phone number
+  const phoneNumber = "+919999999999";
 
   return (
     <>
@@ -29,7 +35,6 @@ export default function Page() {
       <br />
       <br />
 
-      {/* Booking Popup */}
       {isBookingOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-md w-full max-w-md shadow-lg">
@@ -74,7 +79,6 @@ export default function Page() {
         </div>
       )}
 
-      {/* Scrolling Brands */}
       <div className="px-4 py-8 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="md:max-w-sm">
@@ -101,7 +105,6 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Cards Section */}
       <div className="grid md:grid-cols-3 py-6 p-8 gap-4">
         {[...Array(4)].map((_, index) => (
           <div key={index} className="border p-4 rounded shadow-md">
@@ -149,7 +152,6 @@ export default function Page() {
         ))}
       </div>
 
-      {/* Product Description */}
       <div className="max-w-7xl mx-auto px-4 py-10 font-sans">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -167,11 +169,8 @@ export default function Page() {
               100 | 228x254 cm | Multicolour
             </h1>
             <div className="mt-4 text-2xl font-bold text-green-700">
-              ₹349.00{" "}
-              <span className="text-sm line-through text-gray-500 ml-2">
-                ₹999
-              </span>{" "}
-              <span className="text-orange-500 text-sm">65% off</span>
+              ₹349.00 <span className="text-sm line-through text-gray-500 ml-2">₹999</span>
+              <span className="text-orange-500 text-sm ml-2">65% off</span>
             </div>
 
             <div className="mt-4">
@@ -182,11 +181,11 @@ export default function Page() {
               <h2 className="text-md font-semibold mb-2">Description</h2>
               <p className="text-sm text-gray-700">
                 Lorem ipsum dolor sit amet, consectetu g ectetu rus. Nulla
-                feugiat lectus a nisl fermentum, nec cursus erat vulputate.
-                Donec pulvinar, sapien sed imperdiet gravida, urna tortor
-                pulvinar neque, ut suscipit augue magna eget magna. Vestibulum
-                tincidunt, elit id bibendum hendrerit, turpis odio feugiat
-                nulla, in congue erat magna in augue.
+                feugiat lectus a nisl fermentum, nec cursus erat vulputate. Donec
+                pulvinar, sapien sed imperdiet gravida, urna tortor pulvinar
+                neque, ut suscipit augue magna eget magna. Vestibulum tincidunt,
+                elit id bibendum hendrerit, turpis odio feugiat nulla, in congue
+                erat magna in augue.
               </p>
             </div>
 
@@ -213,7 +212,3 @@ export default function Page() {
     </>
   );
 }
-
-const images = [
-  "https://5.imimg.com/data5/SELLER/Default/2021/1/XK/LR/PI/120736883/elisa-automatic-kitchen-chimney.jpg",
-];

@@ -5,7 +5,7 @@ import StatsOfNumbers from "../../Componets/StatsOfNumbers/StatsOfNumbers";
 import Footer from "../../Componets/Footer/Footer";
 
 export default function Page() {
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+   
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   const handleOpenBooking = () => setIsBookingOpen(true);

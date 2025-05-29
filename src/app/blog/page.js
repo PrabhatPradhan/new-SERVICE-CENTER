@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { FaPlus, FaSnowflake, FaTv, FaWater, FaWind, FaTachometerAlt, FaFire, FaSink } from "react-icons/fa";
+import { FaSnowflake, FaTv, FaWater, FaWind, FaTachometerAlt, FaFire, FaSink } from "react-icons/fa";
 import { MdMicrowave } from "react-icons/md";
 import Footer from "../Componets/Footer/Footer";
 import Navbar from '../Componets/Navbar/Navbar'
 
 // ✅ Card Item Component
-const CardItem = ({ Icon, label, title, description }) => (
+const CardItem = ({ Icon, label, title  }) => (
   <div className="cursor-pointer bg-white border border-gray-200 rounded-md p-6 flex flex-col justify-between shadow-md hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
     <div className="flex items-start gap-4">
       <div className="w-12 h-12 text-orange-500 text-3xl">
